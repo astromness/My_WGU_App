@@ -1,11 +1,15 @@
 package Models;
 
 import Utilities.Financial_Status;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.util.Date;
 
+@Entity(tableName = "students")
 public class Student extends Person {
     private Financial_Status status;
+    @PrimaryKey
     private int id;
 
     public Student() {

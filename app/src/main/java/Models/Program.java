@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity(tableName = "programs")
 public class Program {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String name;
     private String description;

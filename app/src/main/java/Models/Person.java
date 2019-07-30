@@ -1,11 +1,16 @@
 package Models;
 
+import androidx.room.ColumnInfo;
+
 import java.util.Date;
 
 public class Person {
     private Date created;
+    @ColumnInfo(name="first_name")
     private String first;
+    @ColumnInfo(name="last_name")
     private String last;
+    @ColumnInfo(name = "date_of_birth")
     private Date dob;
     private String address;
     private String city;
