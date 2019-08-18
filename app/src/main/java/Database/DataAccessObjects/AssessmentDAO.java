@@ -15,5 +15,4 @@ public interface AssessmentDAO {
     @Query("select * from assessments where id = :id")
     Assessment getAssessmentById(int id);
 
-    
 }

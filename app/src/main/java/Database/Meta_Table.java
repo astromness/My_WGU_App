@@ -6,19 +6,9 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "meta_data")
 public class Meta_Table {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-    @ColumnInfo()
+    @PrimaryKey
     private String meta_name;
     private String meta_value;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getMeta_name() {
         return meta_name;
@@ -39,8 +29,7 @@ public class Meta_Table {
     public Meta_Table() {
     }
 
-    public Meta_Table(int id, String meta_name, String meta_value) {
-        this.id = id;
+    public Meta_Table( String meta_name, String meta_value) {
         this.meta_name = meta_name;
         this.meta_value = meta_value;
     }

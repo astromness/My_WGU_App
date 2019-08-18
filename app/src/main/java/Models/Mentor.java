@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.util.Date;
+import java.util.Locale;
 
 @Entity(tableName = "mentors")
 public class Mentor extends Person {
@@ -23,7 +24,7 @@ public class Mentor extends Person {
         this.id = id;
     }
 
-    public String get_student_id() {
-        return "MMMYYF{00000000,id}";
+    public String getMentorId() {
+        return  String.format(Locale.getDefault(),"S%tm%ty%08d",this.getDob(),this.getCreated(),this.id);
     }
 }
