@@ -4,10 +4,22 @@
       tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_home" android:title="@string/home"/>
-        <item android:id="@+id/nav_terms" android:title="@string/terms"/>
-        <item android:id="@+id/nav_schedule" android:title="@string/schedule"/>
-        <item android:id="@+id/nav_profile" android:title="@string/profile"/>
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/home"/>
+        <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/ic_school_black_24dp"
+                android:title="@string/terms"/>
+        <item
+                android:id="@+id/nav_schedule"
+                android:icon="@drawable/ic_schedule_black_24dp"
+                android:title="@string/schedule"/>
+        <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile_black_24dp"
+                android:title="@string/profile"/>
     </group>
 
     <!--<item android:title="Communicate">-->
